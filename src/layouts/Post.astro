@@ -1,0 +1,21 @@
+---
+import Container from '../components/Container.astro';
+import Header from '../components/Header.astro'
+import Content from '../layouts/Content.astro';
+import Presentation from '../layouts/Presentation.astro';
+import Card from '../components/Card.astro';
+import Grid from '../components/Grid.astro';
+
+const title = 'Como e porque criar sites estáticos'
+---
+<Presentation title={title}>
+	<Header/>
+	<Container>
+		<Content title={title}>
+      <Grid cols="1">
+          <slot></slot>
+      </Grid>
+		</Content>
+	</Container>
+</Presentation>
+

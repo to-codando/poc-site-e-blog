@@ -1,0 +1,21 @@
+---
+export interface Props {
+	cols: string;
+}
+
+const { cols } = Astro.props as Props;
+const columns = cols
+---
+
+<div class="grid">
+  <slot></slot>
+</div>
+
+<style define:vars={{ columns }}>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 1rem;
+    width:100%;
+  }
+</style>

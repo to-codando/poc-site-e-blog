@@ -1,0 +1,19 @@
+---
+import Container from '../components/Container.astro';
+import Header from '../components/Header.astro'
+import Content from '../layouts/Content.astro';
+import Presentation from '../layouts/Presentation.astro';
+
+const title = 'Home - Rox'
+---
+<Presentation title={title}>
+	<Header/>
+	<Container>
+		<Content title={title}>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident hic temporibus, facilis obcaecati assumenda voluptate at odio! Quaerat enim magnam eos dolorem culpa id dolor adipisci quo, reiciendis suscipit aspernatur laudantium corrupti unde, autem accusamus ipsam ipsa. Beatae hic repudiandae consequatur labore quas quis rerum. Autem sit earum tenetur delectus?</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident hic temporibus, facilis obcaecati assumenda voluptate at odio! Quaerat enim magnam eos dolorem culpa id dolor adipisci quo, reiciendis suscipit aspernatur laudantium corrupti unde, autem accusamus ipsam ipsa. Beatae hic repudiandae consequatur labore quas quis rerum. Autem sit earum tenetur delectus?</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident hic temporibus, facilis obcaecati assumenda voluptate at odio! Quaerat enim magnam eos dolorem culpa id dolor adipisci quo, reiciendis suscipit aspernatur laudantium corrupti unde, autem accusamus ipsam ipsa. Beatae hic repudiandae consequatur labore quas quis rerum. Autem sit earum tenetur delectus?</p>
+		</Content>
+	</Container>
+</Presentation>
+

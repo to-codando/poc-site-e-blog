@@ -1,0 +1,48 @@
+---
+export interface Props {
+	title: string;
+	link: string;
+	content: HTMLElement|string;
+}
+
+const { title, link, content } = Astro.props as Props;
+---
+
+<article class="card-wrapper">
+	<a href={link}>
+		<h3>
+			{title} 
+		</h3>
+	</a>
+	<div class="card-content">
+		{content}
+	</div>
+</article>
+
+<style>
+	.card-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		width:100%;
+		background:#fff;
+		border: 1px #ebebeb solid;
+		border-radius: 5px
+	}
+
+	.card-wrapper h3,
+	.card-content {
+		display: flex;
+		width:100%;
+		padding:1rem;
+	}
+
+	.card-wrapper h3 {
+		border-bottom:1px #ebebeb solid;
+		margin:0;
+		font-size: 1.4rem;
+	}
+
+	.card-content {
+		font-size: 1rem
+	}
+</style>
